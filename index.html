@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deskorolka Polska</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/98327c5b31.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="links">
+        <div class="links-title">
+          <div class="container">
+            <h1>Deskorolka Polska</h1>
+
+            <h2>Ekipa &#35;Dosk8bro</h3>
+            <div id="links-slider" class="bxslider">
+              <p>Vlogi</p>
+              <p>Tutoriale</p>
+              <p>Informacje</p>
+            </div>
+          </div>
+        </div>
+        <nav class="container">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </nav>
+        <div class="border-effect"></div>
+      </div>
+    </header>
+    <footer>
+      <div class="author">
+        <div class="container">
+
+          <span>&copy; created by Piotr Sajko</span>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      $('#links-slider').bxSlider({
+        mode: 'vertical',
+        controls: false,
+        auto: true,
+        pager: false
+      });
+    });
+    </script>
+  </body>
+</html>

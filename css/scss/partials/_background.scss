@@ -1,0 +1,26 @@
+//BACKGROUND COLOR;
+@mixin gradient_animated_background {
+  background: linear-gradient(120deg, #87a1b6, #54a2e1, #904b5a, #8d35c8);
+  background-position: center;
+  background-size: 800% 800%;
+  -webkit-animation: gradient-flow 10s ease infinite alternate;
+  -moz-animation: gradient-flow 10s ease infinite alternate;
+  animation: gradient-flow 10s ease infinite alternate;
+
+
+@-webkit-keyframes gradient-flow {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+  }
+@-moz-keyframes gradient-flow {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+  }
+@keyframes gradient-flow {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+  }
+}

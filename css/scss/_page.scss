@@ -1,0 +1,93 @@
+@import "core/layout";
+@import "partials/all";
+
+
+body {
+  @include gradient_animated_background;
+}
+
+.container {
+  @include container_center;
+
+}
+header {
+  padding: 150px 0 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: $main_header_size;
+  filter: drop-shadow(2px 2px 2px #35154a);
+  -webkit-filter: drop-shadow(2px 2px 2px #35154a);
+  -moz-filter: drop-shadow(2px 2px 2px #35154a);
+  -ms-filter: drop-shadow(2px 2px 2px #35154a);
+}
+
+h2 {
+  font-size: $sec_header_size;
+  color: $sec-color;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  padding: 0 15px;
+  a {
+    font-size: 3.20rem;
+    i {
+      position: relative;
+  		padding: 5px;
+  		margin: 3px;
+    }
+
+  }
+
+}
+
+p {
+  font-size: $slider_paragraph_size;
+  color: $paragraph-color;
+}
+
+.border-effect {
+  width: 50%;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0.5rem auto;
+  @include gradient_animated_border;
+}
+
+.bx-viewport {
+  padding-top: 10px;
+}
+
+span {
+  font-size: 0.85rem;
+  color: $footer-color;
+  font-style: italic;
+}
+
+// MEDIA QUERIES
+@each $rwd_break in $breakpoints {
+  @media only screen and (min-width: #{$rwd_break}) {
+    header, footer {
+      @if $rwd_break == 60em {
+        width: 75%;
+        max-width: 60rem;
+      } @else {
+        width: 80%;
+      }
+    }
+    @if $rwd_break == 60em {
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

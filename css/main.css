@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+html, body {
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header, footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+* {
+  font-family: 'Cabin', sans-serif;
+  color: #F0F1F5;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@-webkit-keyframes border-gradient {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+
+@-moz-keyframes border-gradient {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+
+@keyframes border-gradient {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+
+body {
+  background: linear-gradient(120deg, #87a1b6, #54a2e1, #904b5a, #8d35c8);
+  background-position: center;
+  background-size: 800% 800%;
+  -webkit-animation: gradient-flow 10s ease infinite alternate;
+  -moz-animation: gradient-flow 10s ease infinite alternate;
+  animation: gradient-flow 10s ease infinite alternate;
+}
+
+@-webkit-keyframes gradient-flow {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+@-moz-keyframes gradient-flow {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  padding: 150px 0 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.25rem;
+  filter: drop-shadow(2px 2px 2px #35154a);
+  -webkit-filter: drop-shadow(2px 2px 2px #35154a);
+  -moz-filter: drop-shadow(2px 2px 2px #35154a);
+  -ms-filter: drop-shadow(2px 2px 2px #35154a);
+}
+
+h2 {
+  font-size: 1rem;
+  color: #aaa8a8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+li a {
+  font-size: 3.20rem;
+}
+
+li a i {
+  position: relative;
+  padding: 5px;
+  margin: 3px;
+}
+
+p {
+  font-size: 2rem;
+  color: #F8BBD0;
+}
+
+.border-effect {
+  width: 50%;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0.5rem auto;
+  background-image: linear-gradient(217deg, #246655, #54a2e1, #904b5a, #8d35c8);
+  background-size: 800% 800%;
+  -webkit-animation: border-gradient 10s ease infinite;
+  -moz-animation: border-gradient 10s ease infinite;
+  animation: border-gradient 10s ease infinite;
+}
+
+.bx-viewport {
+  padding-top: 10px;
+}
+
+span {
+  font-size: 0.85rem;
+  color: #424354;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 33.75em) {
+  header, footer {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  header, footer {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header, footer {
+    width: 75%;
+    max-width: 60rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}

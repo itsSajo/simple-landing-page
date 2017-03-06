@@ -1,0 +1,25 @@
+//BORDER EFFECT
+@mixin gradient-animated_border {
+  background-image: linear-gradient(217deg, #246655, #54a2e1, #904b5a, #8d35c8);
+  background-size: 800% 800%;
+  -webkit-animation: border-gradient 10s ease infinite;
+  -moz-animation: border-gradient 10s ease infinite;
+  animation: border-gradient 10s ease infinite;
+}
+
+@-webkit-keyframes border-gradient {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@-moz-keyframes border-gradient {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@keyframes border-gradient {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+
+}
